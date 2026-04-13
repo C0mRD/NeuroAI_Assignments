@@ -19,7 +19,7 @@ python train.py \
   --pretrained_dir ViT-B_16.npz
 ```
 
-I have got a validation of **98.99%**. See the wandb log curves below:
+I have got a validation accuracy of **98.99%**. See the wandb log curves below:
 
 ![Val_curve](./Q1/ViT-pytorch/img/val.png)
 
