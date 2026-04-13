@@ -67,4 +67,7 @@ Implement the following with python in blender: a blue cube automatically droppi
 
 Please see the script `Q5/falling_cube.blend`.
 
-<video src="./Q5/falling_cube.mp4" width="320" height="240" controls></video>
+See the original animation in `Q5/falling_cube.mp4`.
+
+![falling_cube](./Q5/falling_cube.gif)
+<!-- <video src="./Q5/falling_cube.mp4" width="320" height="240" controls></video> -->
