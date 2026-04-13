@@ -1,0 +1,62 @@
+import bpy
+
+# Clear scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=False)
+
+# Ground
+bpy.ops.mesh.primitive_plane_add(size=10, location=(0, 0, 0))
+ground = bpy.context.object
+bpy.ops.rigidbody.object_add()
+ground.rigid_body.type = 'PASSIVE'
+
+# Cube at 2m
+bpy.ops.mesh.primitive_cube_add(size=1, location=(0, 0, 2))
+cube = bpy.context.object
+
+# Blue material
+mat = bpy.data.materials.new(name="BlueMaterial")
+mat.diffuse_color = (0, 0, 1, 1)
+cube.data.materials.append(mat)
+
+# Physics
+bpy.ops.rigidbody.object_add()
+cube.rigid_body.type = 'ACTIVE'
+cube.rigid_body.mass = 1
+
+# Camera
+bpy.ops.object.camera_add(location=(5, -5, 4))
+camera = bpy.context.object
+camera.rotation_euler = (1.1, 0, 0.9)
+bpy.context.scene.camera = camera
+
+# Light
+bpy.ops.object.light_add(type='SUN', location=(5, -5, 10))
+light = bpy.context.object
+light.data.energy = 3
+
+# Scene settings
+scene = bpy.context.scene
+scene.frame_start = 1
+scene.frame_end = 72
+scene.gravity = (0, 0, -9.81)
+
+# Create rigid body world
+if not scene.rigidbody_world:
+    bpy.ops.rigidbody.world_add()
+
+# Step through frames to simulate physics
+for frame in range(scene.frame_start, scene.frame_end + 1):
+    scene.frame_set(frame)
+
+# Render settings
+scene.render.image_settings.file_format = 'FFMPEG'
+scene.render.ffmpeg.format = 'MPEG4'
+scene.render.ffmpeg.codec = 'H264'
+scene.render.filepath = "//falling_cube.mp4"
+
+# Reset to start
+scene.frame_set(1)
+
+# Render
+bpy.ops.render.render(animation=True)
