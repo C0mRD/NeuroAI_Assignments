@@ -1,0 +1,29 @@
+{
+  "os": "Linux-6.8.0-106-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-04-09T10:05:10.062523Z",
+  "args": [
+    "--name",
+    "bees_vs_ants",
+    "--dataset",
+    "custom",
+    "--num_classes",
+    "2",
+    "--model_type",
+    "ViT-B_16",
+    "--pretrained_dir",
+    "ViT-B_16.npz"
+  ],
+  "program": "/home/sujoy/ViT-pytorch/train.py",
+  "codePath": "train.py",
+  "codePathLocal": "train.py",
+  "git": {
+    "remote": "https://github.com/jeonsworld/ViT-pytorch",
+    "commit": "460a162767de1722a014ed2261463dbbc01196b6"
+  },
+  "email": "sujoynathofficial@gmail.com",
+  "root": "/home/sujoy/ViT-pytorch",
+  "host": "sentinel.lcs2",
+  "executable": "/home/sujoy/miniconda3/envs/vit/bin/python",
+  "writerId": "6tavxy393xrd0ll3ddu3hfk1dz2qxh3c"
+}

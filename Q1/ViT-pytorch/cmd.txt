@@ -1,0 +1,12 @@
+python train.py \
+  --name bees_vs_ants \
+  --dataset custom \
+  --num_classes 2 \
+  --model_type ViT-B_16 \
+  --pretrained_dir ViT-B_16.npz \
+  --img_size 224 \
+  --train_batch_size 32 \
+  --eval_batch_size 32 \
+  --learning_rate 0.003 \
+  --num_steps 1000 \
+  --warmup_steps 100

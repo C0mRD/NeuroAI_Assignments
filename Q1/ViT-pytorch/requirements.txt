@@ -1,0 +1,9 @@
+torch
+torchvision
+numpy
+tqdm
+tensorboard
+ml-collections
+wandb
+scipy
+python-dotenv

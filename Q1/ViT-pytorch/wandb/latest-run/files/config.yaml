@@ -1,0 +1,86 @@
+_wandb:
+    value:
+        cli_version: 0.25.1
+        e:
+            zd3wv409jjrqs6eep3pfxnowg6aa3ll9:
+                args:
+                    - --name
+                    - custom2
+                    - --dataset
+                    - custom
+                    - --num_classes
+                    - "2"
+                    - --model_type
+                    - ViT-B_16
+                    - --pretrained_dir
+                    - ViT-B_16.npz
+                    - --num_steps
+                    - "500"
+                    - --train_batch_size
+                    - "64"
+                codePath: train.py
+                codePathLocal: train.py
+                cpu_count: 64
+                cpu_count_logical: 128
+                cudaVersion: "13.0"
+                disk:
+                    /:
+                        total: "1930256146432"
+                        used: "28709253120"
+                email: sujoynathofficial@gmail.com
+                executable: /home/sujoy/miniconda3/envs/vit/bin/python
+                git:
+                    commit: 460a162767de1722a014ed2261463dbbc01196b6
+                    remote: https://github.com/jeonsworld/ViT-pytorch
+                gpu: NVIDIA H200 NVL
+                gpu_count: 5
+                gpu_nvidia:
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-703802e5-6913-04a6-e251-e23ebf8c5fec
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-07e0ffca-b858-5081-eed9-fa13ec339b6f
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-f0860704-cad6-127a-42d1-becb0f184ef3
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-02d6155b-4293-e2f8-021f-732a6d84f1d1
+                    - architecture: Hopper
+                      cudaCores: 16896
+                      memoryTotal: "150754820096"
+                      name: NVIDIA H200 NVL
+                      uuid: GPU-6cb59917-1a41-9aca-42d6-1f01f05de27a
+                host: sentinel.lcs2
+                memory:
+                    total: "1352276680704"
+                os: Linux-6.8.0-106-generic-x86_64-with-glibc2.39
+                program: /home/sujoy/ViT-pytorch/train.py
+                python: CPython 3.11.15
+                root: /home/sujoy/ViT-pytorch
+                startedAt: "2026-04-09T17:13:46.531040Z"
+                writerId: zd3wv409jjrqs6eep3pfxnowg6aa3ll9
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 61
+            "4": 3.11.15
+            "5": 0.25.1
+            "12": 0.25.1
+            "13": linux-x86_64
